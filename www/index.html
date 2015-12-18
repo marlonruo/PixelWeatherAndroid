@@ -1409,14 +1409,14 @@ function clim19(){
         <img id="fondo8" src="imagenes/fondo_8.png" height="100%" style="position:absolute; display:none"/>
         
         <div id="tt0" class="texto2" style="top:0.1%; left:14%; font-weight:500; visibility:hidden; text-transform: uppercase; width:72%; text-align:left"></div>
-        <div id="tt1" class="texto2" style="top:4.1%; left:14%; font-weight:500; visibility:hidden; text-transform: uppercase; width:72%; text-align:center; overflow:hidden; text-overflow: ellipsis;"></div>
-        <div id="tt2" class="texto2" style="top:8%; left:14%; font-weight:500; visibility:hidden; text-align:center; width:72%"></div>
+        <div id="tt1" class="texto2" style="top:4.1%; left:14%; font-weight:500; text-transform: uppercase; width:72%; text-align:center; overflow:hidden; text-overflow: ellipsis;"></div>
+        <div id="tt2" class="texto2" style="top:8%; left:14%; font-weight:500; text-align:center; width:72%"></div>
         
         
         
         
         
-        <div id="ubi" class="texto2" style="top:12%; left:13%; font-weight:500; visibility:hidden; text-align:center; width:72%; height:2.5%">
+        <div id="ubi" class="texto2" style="top:12%; left:13%; font-weight:500; text-align:center; width:72%; height:2.5%">
    	   	 <img id="uu1" src="imagenes/ubi.png" height="100%"/> 
          <img id="boll5" src="imagenes/bolita.png" height="100%" style="display:none"/>
          <img id="boll4" src="imagenes/bolita.png" height="100%" style="display:none"/>
@@ -1424,7 +1424,7 @@ function clim19(){
          <img id="boll2" src="imagenes/bolita.png" height="100%" style="display:none"/>
          <img id="boll1" src="imagenes/bolita.png" height="100%" style="display:none"/> 
         </div>
-        <div id="ubi2" style="left:15%; width:70%; height:15.5%; position:absolute; visibility:hidden;"></div>
+        <div id="ubi2" style="left:15%; width:70%; height:15.5%; position:absolute;"></div>
         
         <div style="position:absolute; width:100%; height:12%; top:16%">
           <div class="dias2"> <span id="hora1" style="position:absolute; width:100%; text-align:center; left:0px;">Next</span> <span id="gra1" class="gra" style="position:absolute; width:100%; text-align:center; left:0px; top:25%; color:#ffffcc; font-size:15px;"></span> <img id="ico1" class="ic" height="40%" style="position:absolute; top:55%; left:50%; margin-left:-16px"/> </div>
@@ -1440,7 +1440,7 @@ function clim19(){
         <iframe src="preload/preload.html" id="prel" width="750" height="550" style="position:absolute; left:50%; border:none; bottom:10%; margin-left:-380px; overflow:hidden; display:none; top:55%; margin-top:-250px;" scrolling="no"></iframe> 
         
         <div style="width:100%; height:80%; position:absolute; top:20%"></div>
-        <img id="menu" src="imagenes/menu.png" style="position:absolute; top:6%; left:5%; height:3%; cursor:pointer; visibility:hidden"/> <img id="mundo" src="imagenes/mundo.png" style="position:absolute; top:5.5%; right:5%; height:4%; cursor:pointer; visibility:hidden"/>
+        <img id="menu" src="imagenes/menu.png" style="position:absolute; top:6%; left:5%; height:3%; cursor:pointer"/> <img id="mundo" src="imagenes/mundo.png" style="position:absolute; top:5.5%; right:5%; height:4%; cursor:pointer;"/>
         <div id="menu1" style="position:absolute; left:0%; top:2%; height:11%; width:70px; cursor:pointer"></div>
         <div id="mundo1" style="position:absolute; right:0%; top:2%; height:11%; width:70px; cursor:pointer"></div>
         <div id="grados" class="texto4" style="top:30%; left:14%; color:#ffffcc"></div>
@@ -1627,7 +1627,7 @@ function clim19(){
                 
         			<div id="botones" style="position:absolute; width:100%; height:100%; display:none; background-color:#33CCCC">
                     
-                    <iframe src="tutorial/tutorial.html" id="tuto" width="750" height="550" style="position:absolute; left:50%; border:none; bottom:10%; margin-left:-380px; overflow:hidden; display:none; top:50%; margin-top:-310px;" scrolling="no"></iframe>
+                    <iframe src="tutorial/tutorial.html" id="tuto" width="750" height="550" style="position:absolute; left:50%; border:none; bottom:10%; margin-left:-380px; overflow:hidden; top:50%; margin-top:-310px;" scrolling="no"></iframe>
                     
           			<div style="width:100%; height:7%; top:80%; position:absolute">
                         <div style="width:100%; height:100%; text-align:center;">
@@ -1772,7 +1772,6 @@ function clim19(){
 						$('#grra').fadeOut()
 						$('#wel').fadeOut()
 						$('#botones').delay(700).fadeIn(1000)
-						$('#tuto').delay(700).fadeIn(1000)
 						localStorage.setItem("bola1", "")
 						localStorage.setItem("bola2", "")
 						localStorage.setItem("bola3", "")
@@ -2491,19 +2490,6 @@ function clim19(){
 			var width
 			var parr
 			function inicio(){
-			
-				
-				
-				
-				
-				setTimeout("$('#tt1').css('visibility', 'visible')", 800)
-				setTimeout("$('#ubi').css('visibility', 'visible')", 800)
-				setTimeout("$('#ubi2').css('visibility', 'visible')", 800)
-				setTimeout("$('#tt2').css('visibility', 'visible')", 800)
-				setTimeout("$('#menu').css('visibility', 'visible')", 800)
-				setTimeout("$('#mundo').css('visibility', 'visible')", 800)
-			
-
 				var $window = $(window);
 				width = $window.width();
 				height = $window.height();
