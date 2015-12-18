@@ -34,7 +34,7 @@
 
 <meta name="viewport" content="user-scalable=no, target-densitydpi=device-dpi">
 <link rel="stylesheet" type="text/css" href="css/index.css" />
-<title>Pixel Weather</title>
+<title>PixelWeather</title>
 <link href="css/estilos.css" rel="stylesheet" type="text/css">
 
 <script src="js/jquery-1.11.2.js" type="text/javascript"></script>
@@ -57,9 +57,7 @@ $(document).ready(function(){
 	
 	//localStorage.setItem("grados", '')
 	init()
-	$('#contenedor').css('visibility','hidden');
-	setTimeout("$('#contenedor').css('visibility','visible')", 3000)
-	$('#contenedor').delay(3000).animate({opacity:1}, 800)
+	$('#contenedor').hide()
 	$('#loadd').delay(3000).fadeOut(800);
 	setTimeout('saltar()', 3000)
 	inicio() 
@@ -901,7 +899,7 @@ weekday[6] = "SAT";
     </script>
 </div>
 
-<div id="contenedor" style="visibility:hidden; opacity:0.0">
+<div id="contenedor" style="display:none">
   <div id="fondo">
   	  <div id="todo"><!--todo-->
   
@@ -913,10 +911,8 @@ weekday[6] = "SAT";
             <!--//////////////////////////////////////////-->
             
             
-            <div id="opciones" style="visibility:hidden"> <!--opciones-->
-        	
-            
-                
+            <div id="opciones" style="display:none"> <!--opciones-->
+
                 <img src="imagenes/send.png" style="position:absolute; cursor:pointer; height:7%; top:17%; left:8%"/> 
             	<img id="un1" src="imagenes/units.png" style="position:absolute; cursor:pointer; height:7%; top:25%; visibility:hidden; left:8%"/> 
             	<img id="un2" src="imagenes/units2.png" style="position:absolute; cursor:pointer; height:7%; top:25%; left:8%"/> 
@@ -924,7 +920,15 @@ weekday[6] = "SAT";
             	<img src="imagenes/rate.png" style="position:absolute; cursor:pointer; height:7%; top:41%; left:8%"/> 
             	<img src="imagenes/privacy.png" style="position:absolute; cursor:pointer; height:7%; top:49%; left:8%"/>
         		<div id="u1" style="position:absolute; top:25%; height:7%; width:100%; cursor:pointer"></div>
-        <script>
+       
+        		<img src="imagenes/data.png" style="position:absolute; cursor:pointer; height:13%; top:84%; margin-left:-30px; left:47%;"/> 
+        		<img src="imagenes/casita.png" style="position:absolute; cursor:pointer; height:10%; top:70%; margin-left:-50px; left:47%"/> 
+        
+        	</div><!--fin opciones-->
+            
+            
+            
+             <script>
 		var cen=0
 		var gr
 		
@@ -986,12 +990,6 @@ weekday[6] = "SAT";
 		})
 		
     </script> 
-        		<img src="imagenes/data.png" style="position:absolute; cursor:pointer; height:13%; top:84%; margin-left:-30px; left:47%;"/> 
-        		<img src="imagenes/casita.png" style="position:absolute; cursor:pointer; height:10%; top:70%; margin-left:-50px; left:47%"/> 
-        
-        	</div><!--fin opciones-->
-            
-            
             
             
             
@@ -1149,79 +1147,60 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
     		<img id="negro" src="imagenes/negro.png" style="position:absolute; top:3%; left:55%; height:8%; display:none"/>
             
             <div id="climas1" class="negro" style="position:absolute; width:100px; height:8%; top:3%; left:55%; display:none">
-            	<p></p>
             </div>
             
             <div id="climas2" class="negro" style="position:absolute; width:100px; height:8%; top:3%; left:55%;  display:none">
-            	<p></p>
             </div>
             
             <div id="climas3" class="negro" style="position:absolute; width:100px; height:8%; top:3%; left:55%;  display:none">
-            	<p></p>
             </div>
             
             <div id="climas4" class="negro" style="position:absolute; width:100px; height:8%; top:3%; left:55%;  display:none">
-            	<p></p>
             </div>
             
             <div id="climas5" class="negro" style="position:absolute; width:100px; height:8%; top:3%; left:55%;  display:none">
-            	<p></p>
             </div>
             
             <div id="climas6" class="negro" style="position:absolute; width:100px; height:8%; top:3%; left:55%;  display:none">
-            	<p></p>
             </div>
             
             <div id="climas7" class="negro" style="position:absolute; width:100px; height:8%; top:3%; left:55%;  display:none">
-            	<p></p>
             </div>
             
             <div id="climas8" class="negro" style="position:absolute; width:100px; height:8%; top:3%; left:55%;  display:none">
-            	<p></p>
             </div>
             
             <div id="climas9" class="negro" style="position:absolute; width:100px; height:8%; top:3%; left:55%;  display:none">
-            	<p></p>
             </div>
             
             <div id="climas10" class="negro" style="position:absolute; width:100px; height:8%; top:3%; left:55%;  display:none">
-            	<p></p>
             </div>
             
             <div id="climas11" class="negro" style="position:absolute; width:100px; height:8%; top:3%; left:55%;  display:none">
-            	<p></p>
             </div>
             
             <div id="climas12" class="negro" style="position:absolute; width:100px; height:8%; top:3%; left:55%;  display:none">
-            	<p></p>
             </div>
             
             <div id="climas13" class="negro" style="position:absolute; width:100px; height:8%; top:3%; left:55%;  display:none">
-            	<p></p>
             </div>
             
             <div id="climas14" class="negro" style="position:absolute; width:100px; height:8%; top:3%; left:55%;  display:none">
-            	<p></p>
             </div>
             
             <div id="climas15" class="negro" style="position:absolute; width:100px; height:8%; top:3%; left:55%;  display:none">
-            	<p></p>
             </div>
             
             <div id="climas16" class="negro" style="position:absolute; width:100px; height:8%; top:3%; left:55%;  display:none">
-            	<p></p>
             </div>
             
             <div id="climas17" class="negro" style="position:absolute; width:100px; height:8%; top:3%; left:55%; display:none">
-            	<p></p>
             </div>
             
             <div id="climas18" class="negro" style="position:absolute; width:100px; height:8%; top:3%; left:55%;  display:none">
-            	<p></p>
             </div>
             
             <div id="climas19" class="negro" style="position:absolute; width:100px; height:8%; top:3%; left:55%;  display:none">
-            	<p></p>
             </div>
 
             
@@ -1456,9 +1435,9 @@ function clim19(){
           <div class="dias2"> <span id="hora6" style="position:absolute; width:100%; text-align:center; left:0px;"></span> <span id="gra6" class="gra" style="position:absolute; width:100%; text-align:center; left:0px; top:25%; color:#ffffcc; font-size:15px;"></span> <img id="ico6" class="ic" height="40%" style="position:absolute; top:55%; left:50%; margin-left:-16px;"/> </div>
         </div>
 
-        <iframe id="pollo" width="750" height="550" style="position:absolute; left:50%; border:none; bottom:10%; margin-left:-380px; overflow:hidden; visibility:hidden; margin-bottom:-153px;" scrolling="no" onload="this.style.visibility='visible';"></iframe>
+        <iframe id="pollo" width="750" height="550" style="position:absolute; left:50%; border:none; bottom:10%; margin-left:-380px; overflow:hidden; margin-bottom:-153px;" scrolling="no"></iframe>
         
-        <iframe src="preload/preload.html" id="prel" width="750" height="550" style="position:absolute; left:50%; border:none; bottom:10%; margin-left:-380px; overflow:hidden; visibility:hidden; top:55%; margin-top:-250px; opacity:0" scrolling="no" onload="this.style.visibility='visible';"></iframe> 
+        <iframe src="preload/preload.html" id="prel" width="750" height="550" style="position:absolute; left:50%; border:none; bottom:10%; margin-left:-380px; overflow:hidden; display:none; top:55%; margin-top:-250px;" scrolling="no"></iframe> 
         
         <div style="width:100%; height:80%; position:absolute; top:20%"></div>
         <img id="menu" src="imagenes/menu.png" style="position:absolute; top:6%; left:5%; height:3%; cursor:pointer; visibility:hidden"/> <img id="mundo" src="imagenes/mundo.png" style="position:absolute; top:5.5%; right:5%; height:4%; cursor:pointer; visibility:hidden"/>
@@ -1493,11 +1472,11 @@ function clim19(){
 	  
 	  
 	  function ir_clima(){
-		  		$('#grados, #icono, #pollo').stop().animate({opacity:'0'},0)
-				$('#grados, #icono, #pollo').stop().delay(1500).animate({opacity:'1'},800)
+		  		$('#grados, #icono, #pollo').stop().fadeOut(0)
+				$('#grados, #icono, #pollo').delay(1500).fadeIn(800)
 				
-				$('#prel').stop().animate({opacity:'1'},0)
-				$('#prel').stop().delay(800).animate({opacity:'0'},500)
+				$('#prel').show()
+				$('#prel').delay(1000).fadeOut(0)
 		  
 		  		if(clim==0){
 					$(document).ready(DocReady_latitud);
@@ -1635,7 +1614,7 @@ function clim19(){
       	
 
       
-      	<div id="intro" style="background-color:#ff6600" style="text-align:center">
+      	<div id="intro" style="background-color:#ff6600" style="text-align:center; display:none">
       			<img src="imagenes/fondo_6.png" height="100%" style="position:absolute"/>
                 
                 
@@ -1648,17 +1627,13 @@ function clim19(){
                 
         			<div id="botones" style="position:absolute; width:100%; height:100%; display:none; background-color:#33CCCC">
                     
-                    <iframe src="tutorial/tutorial.html" id="tuto" width="750" height="550" style="position:absolute; left:50%; border:none; bottom:10%; margin-left:-380px; overflow:hidden; visibility:hidden; top:50%; margin-top:-310px;" scrolling="no" onload="this.style.visibility='visible';"></iframe>
+                    <iframe src="tutorial/tutorial.html" id="tuto" width="750" height="550" style="position:absolute; left:50%; border:none; bottom:10%; margin-left:-380px; overflow:hidden; display:none; top:50%; margin-top:-310px;" scrolling="no"></iframe>
                     
           			<div style="width:100%; height:7%; top:80%; position:absolute">
                         <div style="width:100%; height:100%; text-align:center;">
                             <img id="find" src="imagenes/find.png" style="height:100%; cursor:pointer"/> 
                         </div>
                     </div>
-                    
-                    <script>
-                    	$('#tuto').transit({scale: '.38'}, 0);
-                    </script>
                     
                 </div>
                 
@@ -1797,6 +1772,7 @@ function clim19(){
 						$('#grra').fadeOut()
 						$('#wel').fadeOut()
 						$('#botones').delay(700).fadeIn(1000)
+						$('#tuto').delay(700).fadeIn(1000)
 						localStorage.setItem("bola1", "")
 						localStorage.setItem("bola2", "")
 						localStorage.setItem("bola3", "")
@@ -1855,11 +1831,12 @@ function clim19(){
 					$(this).val(ui.item.label);
 				},
 				select: function(event, ui) {
-				$('#grados, #icono, #pollo').stop().animate({opacity:'0'},0)
-				$('#grados, #icono, #pollo').stop().delay(1500).animate({opacity:'1'},800)
+				$('#grados, #icono, #pollo').stop().fadeOut(0)
+				$('#grados, #icono, #pollo').delay(1500).fadeIn(800)
 				
-				$('#prel').stop().animate({opacity:'1'},0)
-				$('#prel').stop().delay(800).animate({opacity:'0'},500)
+				$('#prel').show()
+				$('#prel').delay(1000).fadeOut(0)
+				
 					event.preventDefault();
 					$(this).val(ui.item.label);
 					countr = ui.item.label
@@ -1884,11 +1861,11 @@ function clim19(){
 		
 		$("#countries2").keyup(function (e) {
 			if (e.keyCode == 13) {
-				$('#grados, #icono, #pollo').stop().animate({opacity:'0'},0)
-				$('#grados, #icono, #pollo').stop().delay(1500).animate({opacity:'1'},800)
+				$('#grados, #icono, #pollo').stop().fadeOut(0)
+				$('#grados, #icono, #pollo').delay(1500).fadeIn(800)
 				
-				$('#prel').stop().animate({opacity:'1'},0)
-				$('#prel').stop().delay(800).animate({opacity:'0'},500)
+				$('#prel').show()
+				$('#prel').delay(1000).fadeOut(0)
 				
 					countr = document.getElementById('countries2').value
 					$("#countries2").blur()
@@ -1909,23 +1886,19 @@ function clim19(){
 	  
 	  		function saltar(){
 				if (localStorage.getItem("grados") != null && localStorage.getItem("grados")!="") {
-						$('#grra').hide()
-						$('#botones').show()
-						
-						$('#grados, #icono, #pollo').stop().animate({opacity:'0'},0)
-						$('#grados, #icono, #pollo').stop().delay(1500).animate({opacity:'1'},800)
-						
-						$('#prel').stop().animate({opacity:'1'},0)
-						$('#prel').stop().delay(800).animate({opacity:'0'},500)
-						
+						$('#contenedor').fadeIn()
+						$('#intro').hide()
+						$('#clima').show()			
+						$('#grados, #icono, #pollo').stop().fadeOut(0)
+						$('#grados, #icono, #pollo').delay(1500).fadeIn(800)
+						$('#prel').stop().fadeIn(0)
+						$('#prel').delay(1000).fadeOut(0)
 						setTimeout('$(document).ready(DocReady_latitud)', 800);
-						seleccion=1
-						$('#wel').fadeOut()
-						$('#botones').fadeOut()
-						$('#intro').fadeOut()
-						$('#clima').show()
 						ver()
 						infi()
+				}else{
+						$('#contenedor').fadeIn()
+						$('#intro').fadeIn()
 				}
 			
 				num_climas = localStorage.getItem("num_climas")
@@ -2183,11 +2156,11 @@ function clim19(){
 				$('#pa1, #pa2, #pa3, #pa4, #pa5').animate({marginLeft:'10%'}, 800)
 				
 				
-				$('#grados, #icono, #pollo').stop().animate({opacity:'0'},0)
-				$('#grados, #icono, #pollo').stop().delay(1500).animate({opacity:'1'},800)
+				$('#grados, #icono, #pollo').stop().fadeOut(0)
+				$('#grados, #icono, #pollo').delay(1500).fadeIn(800)
 				
-				$('#prel').stop().animate({opacity:'1'},0)
-				$('#prel').stop().delay(800).animate({opacity:'0'},500)
+				$('#prel').show()
+				$('#prel').delay(1000).fadeOut(0)
 				
 				
 				
@@ -2213,11 +2186,11 @@ function clim19(){
 				$('#borra1, #borra2, #borra3, #borra4, #borra5').fadeOut()
 				$('#pa1, #pa2, #pa3, #pa4, #pa5').animate({marginLeft:'10%'}, 800)
 				
-				$('#grados, #icono, #pollo').stop().animate({opacity:'0'},0)
-				$('#grados, #icono, #pollo').stop().delay(1500).animate({opacity:'1'},800)
+				$('#grados, #icono, #pollo').stop().fadeOut(0)
+				$('#grados, #icono, #pollo').delay(1500).fadeIn(800)
 				
-				$('#prel').stop().animate({opacity:'1'},0)
-				$('#prel').stop().delay(800).animate({opacity:'0'},500)
+				$('#prel').show()
+				$('#prel').delay(1000).fadeOut(0)
 				
 				$('#uu1').attr('src', 'imagenes/ubi.png');
 				$('#boll1').attr('src', 'imagenes/bolita.png');
@@ -2238,11 +2211,11 @@ function clim19(){
 				$('#borra1, #borra2, #borra3, #borra4, #borra5').fadeOut()
 				$('#pa1, #pa2, #pa3, #pa4, #pa5').animate({marginLeft:'10%'}, 800)
 				
-				$('#grados, #icono, #pollo').stop().animate({opacity:'0'},0)
-				$('#grados, #icono, #pollo').stop().delay(1500).animate({opacity:'1'},800)
+				$('#grados, #icono, #pollo').stop().fadeOut(0)
+				$('#grados, #icono, #pollo').delay(1500).fadeIn(800)
 				
-				$('#prel').stop().animate({opacity:'1'},0)
-				$('#prel').stop().delay(800).animate({opacity:'0'},500)
+				$('#prel').show()
+				$('#prel').delay(1000).fadeOut(0)
 				
 				$('#uu1').attr('src', 'imagenes/ubi.png');
 				$('#boll1').attr('src', 'imagenes/bolita.png');
@@ -2265,11 +2238,11 @@ function clim19(){
 				$('#pa1, #pa2, #pa3, #pa4, #pa5').animate({marginLeft:'10%'}, 800)
 				clim = 4
 				
-				$('#grados, #icono, #pollo').stop().animate({opacity:'0'},0)
-				$('#grados, #icono, #pollo').stop().delay(1500).animate({opacity:'1'},800)
+				$('#grados, #icono, #pollo').stop().fadeOut(0)
+				$('#grados, #icono, #pollo').delay(1500).fadeIn(800)
 				
-				$('#prel').stop().animate({opacity:'1'},0)
-				$('#prel').stop().delay(800).animate({opacity:'0'},500)
+				$('#prel').show()
+				$('#prel').delay(1000).fadeOut(0)
 				
 				$('#uu1').attr('src', 'imagenes/ubi.png');
 				$('#boll1').attr('src', 'imagenes/bolita.png');
@@ -2291,11 +2264,11 @@ function clim19(){
 				$('#pa1, #pa2, #pa3, #pa4, #pa5').animate({marginLeft:'10%'}, 800)
 				clim = 5
 				
-				$('#grados, #icono, #pollo').stop().animate({opacity:'0'},0)
-				$('#grados, #icono, #pollo').stop().delay(1500).animate({opacity:'1'},800)
+				$('#grados, #icono, #pollo').stop().fadeOut(0)
+				$('#grados, #icono, #pollo').delay(1500).fadeIn(800)
 				
-				$('#prel').stop().animate({opacity:'1'},0)
-				$('#prel').stop().delay(800).animate({opacity:'0'},500)
+				$('#prel').show()
+				$('#prel').delay(1000).fadeOut(0)
 				
 				$('#uu1').attr('src', 'imagenes/ubi.png');
 				$('#boll1').attr('src', 'imagenes/bolita.png');
@@ -2429,10 +2402,14 @@ function clim19(){
 			})
 	  		
       		var lugar=1
-			var seleccion=0
+
 			$('#find').click(function(){
+				$('#grados, #icono, #pollo').stop().fadeOut(0)
+				$('#grados, #icono, #pollo').delay(1500).fadeIn(800)
+				$('#prel').stop().fadeIn(0)
+				$('#prel').delay(1000).fadeOut(0)
+						
 				$(document).ready(DocReady_latitud);
-				seleccion=1
 				$('#wel').fadeOut()
 				$('#botones').fadeOut()
 				$('#intro').fadeOut()
@@ -2466,7 +2443,6 @@ function clim19(){
 				
 				
 			$('#regresa').click(function(){
-							seleccion=0
 							$('#botones, #wel').fadeIn()
 							$('#busca').fadeOut()			
 			})
@@ -2477,13 +2453,13 @@ function clim19(){
 				$('#menu1').css('height','100%')
 				$('#clima').animate({left:'90%'}, 800);
 				$('#menu').animate({left:'2%'}, 800);
-				$('#opciones').css('visibility', 'visible')
+				$('#opciones').show()
 				lugar=2
 				}else{
 				$('#menu1').css('height','11%')
 				$('#clima').animate({left:'0%'}, 800);
 				$('#menu').animate({left:'5%'}, 800);
-				setTimeout("$('#opciones').css('visibility', 'hidden')", 800);
+				$('#opciones').delay(800).fadeOut(0)
 				lugar=1
 				}
 			})
@@ -2536,36 +2512,43 @@ function clim19(){
 					$('#pollo').css('margin-bottom','-153px')
 					$('.ic').css('margin-left','-18px')
 					$('.icc').css('margin-left','-13px')
+					$('#tuto').transit({scale: '.38'}, 0);
 				}else if(width>=378 && width<=428){
 					$('#pollo').transit({scale: '.57'}, 0);
 					$('#pollo').css('margin-bottom','-120px')
 					$('.ic').css('margin-left','-18px')
 					$('.icc').css('margin-left','-16px')
+					$('#tuto').transit({scale: '.50'}, 0);
 				}else if(width>=429 && width<=483){
 					$('#pollo').transit({scale: '.65'}, 0);
 					$('#pollo').css('margin-bottom','-98px')
 					$('.ic').css('margin-left','-20px')
 					$('.icc').css('margin-left','-18px')
+					$('#tuto').transit({scale: '.57'}, 0);
 				}else if(width>=484 && width<=536){
 					$('#pollo').transit({scale: '.72'}, 0);
 					$('#pollo').css('margin-bottom','-78px')
 					$('.ic').css('margin-left','-22px')
 					$('.icc').css('margin-left','-20px')
+					$('#tuto').transit({scale: '.65'}, 0);
 				}else if(width>=537 && width<=603){
 					$('#pollo').transit({scale: '.8'}, 0);
 					$('#pollo').css('margin-bottom','-56px')
 					$('.ic').css('margin-left','-22px')
 					$('.icc').css('margin-left','-20px')
+					$('#tuto').transit({scale: '.73'}, 0);
 				}else if(width>=604 && width<=703){
 					$('#pollo').transit({scale: '.94'}, 0);
 					$('#pollo').css('margin-bottom','-20px')
 					$('.ic').css('margin-left','-22px')
 					$('.icc').css('margin-left','-20px')
+					$('#tuto').transit({scale: '.87'}, 0);
 				}else if(width>=704){
 					$('#pollo').transit({scale: '.96'}, 0);
 					$('#pollo').css('margin-bottom','-13px')
 					$('.ic').css('margin-left','-22px')
 					$('.icc').css('margin-left','-20px')
+					$('#tuto').transit({scale: '.89'}, 0);
 				}
 				
 				
