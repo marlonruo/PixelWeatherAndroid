@@ -70,7 +70,7 @@
 	<gap:plugin name="org.apache.cordova.statusbar" />
 	<gap:plugin name="org.apache.cordova.network-information" />
 	<gap:plugin name="nl.x-services.plugins.socialsharing" />
-	<plugin name="Diagnostic" value="android.Diagnostic"/>
+	<plugin name="Diagnostic" value="android-Diagnostic"/>
 
 	
 
