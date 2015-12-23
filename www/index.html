@@ -2595,7 +2595,6 @@ function clim19(){
       
       
       <script type="text/javascript" src="cordova.js"></script>
-      <script type="text/javascript" src="diagnostic.js"></script>  
       <script src="lib/lock-6.js"></script> 
       <script type="text/javascript" src="js/auth0-variables.js"></script> 
       <script type="text/javascript" src="js/app.js"></script> 
@@ -2609,18 +2608,11 @@ function clim19(){
 		  alert("hola")
 		  
 
-	    Diagnostic.prototype.isLocationEnabled(locationEnabledSuccessCallback, locationEnabledErrorCallback);
-	
-	   function locationEnabledSuccessCallback(result) {
-		  if (result)
-			 alert("Location ON");
-		  else
-			 alert("Location OFF");
-	   }
-	
-	   function locationEnabledErrorCallback(error) {
-		  console.log(error);
-	   }
+	    window.applicationPreferences.get("myKey", function(value) {
+				alert("Value is " + value);
+			}, function(error) {
+				alert("Error! " + JSON.stringify(error));
+		});
 	});
 
 	  
