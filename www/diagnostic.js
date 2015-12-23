@@ -19,6 +19,7 @@ var Diagnostic = function() {
  * 								This callback function have a string param with the error.
  */
 Diagnostic.prototype.isLocationEnabled = function(successCallback, errorCallback) {
+	alert('hola2')
 	return cordova.exec(successCallback,
 						errorCallback,
 						'Diagnostic',
