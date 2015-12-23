@@ -44,6 +44,7 @@ var app = {
 //
 
 function onSuccess(position) {
+	alert(bien)
 	var cordenadas = position.coords.latitude+", "+position.coords.longitude				
 		
 	navigator.geolocation.clearWatch(watchID);
@@ -60,7 +61,7 @@ function onSuccess(position) {
 // onError Callback receives a PositionError object
 //
 function onError(error) {
-    
+    alert(error)
 }
 
 // Options: throw an error if no update is received every 30 seconds.
