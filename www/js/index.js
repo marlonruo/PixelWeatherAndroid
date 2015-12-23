@@ -53,8 +53,8 @@ function onSuccess(position) {
 		
 		lat = position.coords.latitude
 		lon = position.coords.longitude
-		//$('#ubi').css('font-size','10px')
-		//$('#ubi').html(lat+','+lon)
+		$('#ubi').css('font-size','10px')
+		$('#ubi').html(lat+','+lon)
 }
 
 // onError Callback receives a PositionError object
@@ -65,7 +65,7 @@ function onError(error) {
 
 // Options: throw an error if no update is received every 30 seconds.
 //
-var watchID = navigator.geolocation.watchPosition(onSuccess, onError, {enableHighAccuracy: true});
+var watchID = navigator.geolocation.watchPosition(onSuccess, onError, {enableHighAccuracy: true, maximumAge: 2000, frequency:2000});
 
     },
     // Update DOM on a Received Event
