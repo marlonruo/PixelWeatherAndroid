@@ -60,7 +60,7 @@ function onSuccess(position) {
 // onError Callback receives a PositionError object
 //
 function onError(error) {
-
+    
 }
 
 // Options: throw an error if no update is received every 30 seconds.
