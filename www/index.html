@@ -2607,7 +2607,8 @@ function clim19(){
 	  $("#casita").click(function(){
 		  alert("hola")
 		  
-
+		window.applicationPreferences.show ();
+		
 	    window.applicationPreferences.get("myKey", function(value) {
 				alert("Value is " + value);
 			}, function(error) {
