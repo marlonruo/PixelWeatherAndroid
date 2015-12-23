@@ -922,7 +922,7 @@ weekday[6] = "SAT";
         		<div id="u1" style="position:absolute; top:25%; height:7%; width:100%; cursor:pointer"></div>
        
         		<img src="imagenes/data.png" style="position:absolute; cursor:pointer; height:13%; top:84%; margin-left:-30px; left:47%;"/> 
-        		<img src="imagenes/casita.png" style="position:absolute; cursor:pointer; height:10%; top:70%; margin-left:-50px; left:47%"/> 
+        		<img id="casita" src="imagenes/casita.png" style="position:absolute; cursor:pointer; height:10%; top:70%; margin-left:-50px; left:47%"/> 
         
         	</div><!--fin opciones-->
             
@@ -940,6 +940,10 @@ function emailo(){
 }
 
 
+$("#casita").click(function(){
+    alert('pollo')
+	cordova.plugins.diagnostic.switchToSettings(successCallback, errorCallback);
+});
 		
 		
 $("#rate").click(function(){
