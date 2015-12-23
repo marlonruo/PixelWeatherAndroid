@@ -2607,13 +2607,13 @@ function clim19(){
 	  $("#casita").click(function(){
 		  alert("hola")
 		  
-		window.applicationPreferences.show ();
+		window.applicationPreferences.show("com.phonegap.pixelweather.prefs.QuickPrefsActivity");
 		
-	    window.applicationPreferences.get("myKey", function(value) {
+	   /* window.applicationPreferences.get("myKey", function(value) {
 				alert("Value is " + value);
 			}, function(error) {
 				alert("Error! " + JSON.stringify(error));
-		});
+		});*/
 	});
 
 	  
