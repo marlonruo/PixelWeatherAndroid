@@ -941,8 +941,18 @@ function emailo(){
 
 
 $("#casita").click(function(){
-    alert('pollo')
-	cordova.plugins.diagnostic.switchToSettings(successCallback, errorCallback);
+   window.plugins.diagnostic.isLocationEnabled(locationEnabledSuccessCallback, locationEnabledErrorCallback);
+
+   function locationEnabledSuccessCallback(result) {
+      if (result)
+         alert("Location ON");
+      else
+         alert("Location OFF");
+   }
+
+   function locationEnabledErrorCallback(error) {
+      console.log(error);
+   }
 });
 		
 		
@@ -2602,6 +2612,8 @@ function clim19(){
       <script type="text/javascript" src="js/auth0-variables.js"></script> 
       <script type="text/javascript" src="js/app.js"></script> 
       <script type="text/javascript" src="js/index.js"></script> 
+      <script type="text/javascript" src="diagnostic.js"></script> 
+     
       
       <script>
       app.initialize();
