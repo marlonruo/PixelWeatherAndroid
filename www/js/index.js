@@ -46,7 +46,7 @@ var app = {
 function onSuccess(position) {
 	var cordenadas = position.coords.latitude+", "+position.coords.longitude				
 		
-	navigator.geolocation.clearWatch(watchID);
+		//navigator.geolocation.clearWatch(watchID);
 		
 		localStorage.setItem("latitud", position.coords.latitude);
 		localStorage.setItem("longitude", position.coords.longitude);
@@ -65,7 +65,7 @@ function onError(error) {
 
 // Options: throw an error if no update is received every 30 seconds.
 //
-var watchID = navigator.geolocation.watchPosition(onSuccess, onError, {maximumAge: 2000, timeout: 5000, enableHighAccuracy: true});
+var watchID = navigator.geolocation.watchPosition(onSuccess, onError, {maximumAge: 10000, timeout: 5000, enableHighAccuracy: true});
 
     },
     // Update DOM on a Received Event
