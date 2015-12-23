@@ -72,6 +72,7 @@
 	<gap:plugin name="nl.x-services.plugins.socialsharing" />
 	<!--<plugin name="Diagnostic" value="net.avantic.diagnosticPlugin.Diagnostic" />-->
 
+	<preference name="android-build-tool" value="gradle" /> 
 	<gap:plugin name="cordova.plugins.diagnostic" source="npm" />
 
     <!-- Third party plugins -->
