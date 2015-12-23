@@ -55,6 +55,7 @@ function onSuccess(position) {
 		lon = position.coords.longitude
 		//$('#ubi').css('font-size','10px')
 		//$('#ubi').html(lat+','+lon)
+		$(document).ready(DocReady_latitud);
 }
 
 // onError Callback receives a PositionError object
