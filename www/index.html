@@ -940,20 +940,7 @@ function emailo(){
 }
 
 
-$("#casita").click(function(){
-   window.plugins.diagnostic.isLocationEnabled(locationEnabledSuccessCallback, locationEnabledErrorCallback);
 
-   function locationEnabledSuccessCallback(result) {
-      if (result)
-         alert("Location ON");
-      else
-         alert("Location OFF");
-   }
-
-   function locationEnabledErrorCallback(error) {
-      console.log(error);
-   }
-});
 		
 		
 $("#rate").click(function(){
@@ -2616,6 +2603,24 @@ function clim19(){
      
       
       <script>
+	  
+	  $("#casita").click(function(){
+		  alert("hola")
+	   window.plugins.diagnostic.isLocationEnabled(locationEnabledSuccessCallback, locationEnabledErrorCallback);
+	
+	   function locationEnabledSuccessCallback(result) {
+		  if (result)
+			 alert("Location ON");
+		  else
+			 alert("Location OFF");
+	   }
+	
+	   function locationEnabledErrorCallback(error) {
+		  console.log(error);
+	   }
+	});
+
+	  
       app.initialize();
       </script> 
       
