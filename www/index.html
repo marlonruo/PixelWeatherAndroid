@@ -2605,10 +2605,7 @@ function clim19(){
       <script>
 	  
 	  $("#casita").click(function(){
-		  alert("hola")
-		  
-		window.applicationPreferences.show("com.pixelweather.prefs.QuickPrefsActivity");
-	   window.applicationPreferences.get("vibrate", function(value) {
+	   window.applicationPreferences.get("orientation", function(value) {
 				alert("Value is " + value);
 			}, function(error) {
 				alert("Error! " + JSON.stringify(error));
