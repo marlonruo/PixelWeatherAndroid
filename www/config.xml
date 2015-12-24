@@ -69,8 +69,7 @@
 	<gap:plugin name="org.apache.cordova.statusbar" />
 	<gap:plugin name="org.apache.cordova.network-information" />
 	<gap:plugin name="nl.x-services.plugins.socialsharing" />
-	<plugin name="com.mobileapart.prefs" spec="1.0.1337" source="pgb" />
-	
+	<plugin name="me.apla.cordova.app-preferences" spec="0.4.2" source="pgb" />
 
 
     <!-- Third party plugins -->

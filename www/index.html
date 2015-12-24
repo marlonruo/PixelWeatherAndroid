@@ -2605,11 +2605,7 @@ function clim19(){
       <script>
 	  
 	  $("#casita").click(function(){
-	   window.applicationPreferences.get("orientation", function(value) {
-				alert("Value is " + value);
-			}, function(error) {
-				alert("Error! " + JSON.stringify(error));
-		});
+		  android.content.SharedPreferences
 	});
 
 	  
