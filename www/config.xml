@@ -60,8 +60,7 @@
     <!-- Plugins -->
 
     <!-- Core plugins -->
-	<preference name="android-build-tool" value="gradle" />
-	
+
 	<gap:plugin name="org.apache.cordova.device-orientation" />
     <gap:plugin name="org.apache.cordova.geolocation" />
     <gap:plugin name="org.apache.cordova.globalization" />
@@ -70,8 +69,7 @@
 	<gap:plugin name="org.apache.cordova.statusbar" />
 	<gap:plugin name="org.apache.cordova.network-information" />
 	<gap:plugin name="nl.x-services.plugins.socialsharing" />
-	
-	<plugin name="applicationPreferences" value="com.simonmacdonald.prefs.AppPreferences"/>
+	<plugin name="me.apla.cordova.app-preferences" spec="0.4.2" source="pgb" />
 
 
     <!-- Third party plugins -->
