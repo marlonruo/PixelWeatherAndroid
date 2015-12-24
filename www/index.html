@@ -2605,7 +2605,14 @@ function clim19(){
       <script>
 	  
 	  $("#casita").click(function(){
-		  android.content.SharedPreferences
+function ok (value) {}
+function fail (error) {}
+
+
+var prefs = plugins.appPreferences;
+
+// store key => value pair
+prefs.store (ok, fail, 'server', 'value');
 	});
 
 	  
