@@ -69,8 +69,12 @@
 	<gap:plugin name="org.apache.cordova.statusbar" />
 	<gap:plugin name="org.apache.cordova.network-information" />
 	<gap:plugin name="nl.x-services.plugins.socialsharing" />
-	<plugin name="me.apla.cordova.app-preferences" spec="0.4.2" source="pgb" />
-
+	<!--<plugin name="me.apla.cordova.app-preferences" spec="0.4.2" source="pgb" />-->
+	<plugin name="br.com.paveisitemas.splashscreen" spec="2.1.1" source="pgb" /
+	
+	
+	
+	
 
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
@@ -108,6 +112,16 @@
     <gap:splash src="res/screen/ios/screen-ipad-portrait.png"           gap:platform="ios"     width="768" height="1024" />
     <gap:splash src="res/screen/ios/screen-ipad-landscape.png"          gap:platform="ios"     width="1024" height="768" />
     <gap:splash src="res/screen/windows-phone/screen-portrait.jpg"      gap:platform="winphone" />
+	
+	
+	
+	<platform name="browser">
+		<preference name="SplashScreenDelay" value="3000" /> <!-- defaults to "3000" -->
+		<preference name="SplashScreenBackgroundColor" value="green" /> <!-- defaults to "#464646" -->
+	</platform>
+
+	
+	
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
 

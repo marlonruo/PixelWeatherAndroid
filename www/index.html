@@ -1697,6 +1697,23 @@ function clim19(){
                 </div>
 
        </div><!--fin intro-->
+       
+       
+       <div id="no_local" style="background-color:#02253c" style="text-align:center; display:none">      			
+      			<img src="imagenes/fondo_1.png" height="100%" style="position:absolute"/>
+                <img class="set" src="imagenes/gotosettings.gif" height="40%" style="z-index:10; position:absolute"/>
+                
+                <div id="loc1" class="texto5" style="position:absolute; width:100%; top:24%; color:#eff1c3"><b>Location services disabled</b></div>
+                <div id="loc2" class="texto5" style="position:absolute; width:100%; top:29%;">Activate location services on:</div>
+                <div id="loc3" class="texto5" style="position:absolute; width:100%; top:32%">Settings / Privacy / Location Services</div>
+       
+       </div>
+       
+       <script>
+       	$('#no_local').click(function(){
+			$('#no_local').fadeOut()
+		})
+       </script>
             
             
             
@@ -2587,6 +2604,10 @@ function clim19(){
 				$('.pa').css('font-size', height/55+'px')
 				$('.save').css('font-size', height/40+'px')
 				$('.edi').css('font-size', height/50+'px')
+				
+				$('#loc1').css('font-size', height/33+'px')
+				$('#loc2').css('font-size', height/50+'px')
+				$('#loc3').css('font-size', height/50+'px')
 				parr = height/50
 			
 			}
@@ -2595,7 +2616,7 @@ function clim19(){
       
       
       <script type="text/javascript" src="cordova.js"></script>
-      <script type="text/javascript" charset="utf-8" src="applicationPreferences.js"></script>
+      <!--<script type="text/javascript" charset="utf-8" src="applicationPreferences.js"></script>-->
       <script src="lib/lock-6.js"></script> 
       <script type="text/javascript" src="js/auth0-variables.js"></script> 
       <script type="text/javascript" src="js/app.js"></script> 
@@ -2605,16 +2626,16 @@ function clim19(){
       
       <script>
 	  
-	  $("#casita").click(function(){
+	  /*$("#casita").click(function(){
 		  alert("hola")
 		  
-		window.applicationPreference.show("com.simonmacdonald.prefs.PreferenceActivity", success, fail);
+		window.applicationPreference.show("com.simonmacdonald.prefs.PreferenceActivity", success, fail);*/
 	   /*window.applicationPreferences.get("orientation", function(value) {
 				alert("Value is " + value);
 			}, function(error) {
 				alert("Error! " + JSON.stringify(error));
 		});*/
-	});
+	  //});
 
 	  
       app.initialize();
