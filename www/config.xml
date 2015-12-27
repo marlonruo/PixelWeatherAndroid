@@ -70,7 +70,7 @@
 	<gap:plugin name="org.apache.cordova.network-information" />
 	<gap:plugin name="nl.x-services.plugins.socialsharing" />
 	<!--<plugin name="me.apla.cordova.app-preferences" spec="0.4.2" source="pgb" />-->
-	<plugin name="br.com.paveisitemas.splashscreen" spec="2.1.1" source="pgb" /
+	<plugin name="br.com.paveisitemas.splashscreen" spec="2.1.1" source="pgb" />
 	
 	
 	
