@@ -85,3 +85,8 @@ var watchID = navigator.geolocation.watchPosition(onSuccess, onError, {frequency
 
 
 
+$(document).ready(function(){
+            setTimeout(function(){
+                navigator.splashscreen.hide();
+           },1500);
+        });
