@@ -1481,9 +1481,7 @@ function clim19(){
 				setTimeout("$('#grados, #icono, #pollo').show()", 1500)
 				
 				$('#prel').show()
-				setTimeout("$('#prel').hide()", 1500)
-				$('#prel').attr('src', 'preload/preload.html');
-				setTimeout("$('#prel').attr('src', 'nada.html')", 1500)
+						setTimeout("$('#prel').hide()", 1500)
 		  
 		  		if(clim==0){
 					$(document).ready(DocReady_latitud);
@@ -1813,8 +1811,6 @@ function clim19(){
 				
 				$('#prel').show()
 						setTimeout("$('#prel').hide()", 1500)
-						$('#prel').attr('src', 'preload/preload.html');
-				setTimeout("$('#prel').attr('src', 'nada.html')", 1500)
 				
 					event.preventDefault();
 					$(this).val(ui.item.label);
@@ -1845,8 +1841,6 @@ function clim19(){
 				
 				$('#prel').show()
 				setTimeout("$('#prel').hide()", 1500)
-				$('#prel').attr('src', 'preload/preload.html');
-				setTimeout("$('#prel').attr('src', 'nada.html')", 1500)
 				
 					countr = document.getElementById('countries2').value
 					$("#countries2").blur()
@@ -1867,6 +1861,7 @@ function clim19(){
 	  
 	  		function saltar(){
 				if (localStorage.getItem("grados") != null && localStorage.getItem("grados")!="") {
+						$('#tuto').attr('src', 'nada.html');
 						$('#contenedor').fadeIn()
 						$('#intro').hide()
 						$('#clima').show()			
@@ -1874,8 +1869,6 @@ function clim19(){
 						$('#grados, #icono, #pollo').delay(1500).fadeIn(800)
 						$('#prel').show()
 						setTimeout("$('#prel').hide()", 1500)
-						$('#prel').attr('src', 'preload/preload.html');
-				setTimeout("$('#prel').attr('src', 'nada.html')", 1500)
 						setTimeout('$(document).ready(DocReady_latitud)', 1500);
 						ver()
 						infi()
@@ -2141,8 +2134,6 @@ function clim19(){
 				
 				$('#prel').show()
 						setTimeout("$('#prel').hide()", 1500)
-						$('#prel').attr('src', 'preload/preload.html');
-				setTimeout("$('#prel').attr('src', 'nada.html')", 1500)
 				
 				
 				
@@ -2173,8 +2164,6 @@ function clim19(){
 				
 				$('#prel').show()
 						setTimeout("$('#prel').hide()", 1500)
-						$('#prel').attr('src', 'preload/preload.html');
-				setTimeout("$('#prel').attr('src', 'nada.html')", 1500)
 				
 				$('#uu1').attr('src', 'imagenes/ubi.png');
 				$('#boll1').attr('src', 'imagenes/bolita.png');
@@ -2200,8 +2189,6 @@ function clim19(){
 				
 				$('#prel').show()
 						setTimeout("$('#prel').hide()", 1500)
-						$('#prel').attr('src', 'preload/preload.html');
-				setTimeout("$('#prel').attr('src', 'nada.html')", 1500)
 				
 				$('#uu1').attr('src', 'imagenes/ubi.png');
 				$('#boll1').attr('src', 'imagenes/bolita.png');
@@ -2229,8 +2216,6 @@ function clim19(){
 				
 				$('#prel').show()
 						setTimeout("$('#prel').hide()", 1500)
-						$('#prel').attr('src', 'preload/preload.html');
-				setTimeout("$('#prel').attr('src', 'nada.html')", 1500)
 				
 				$('#uu1').attr('src', 'imagenes/ubi.png');
 				$('#boll1').attr('src', 'imagenes/bolita.png');
@@ -2257,8 +2242,6 @@ function clim19(){
 				
 				$('#prel').show()
 						setTimeout("$('#prel').hide()", 1500)
-						$('#prel').attr('src', 'preload/preload.html');
-				setTimeout("$('#prel').attr('src', 'nada.html')", 1500)
 				
 				$('#uu1').attr('src', 'imagenes/ubi.png');
 				$('#boll1').attr('src', 'imagenes/bolita.png');
@@ -2387,13 +2370,11 @@ function clim19(){
       		var lugar=1
 
 			$('#find').mousedown(function(){
+				$('#tuto').attr('src', 'nada.html');
 				$('#grados, #icono, #pollo').hide()
 				setTimeout("$('#grados, #icono, #pollo').show()", 1500)
-				$('#prel').show()
-				setTimeout("$('#prel').hide()", 1500)
-				
-				$('#prel').attr('src', 'preload/preload.html');
-				setTimeout("$('#prel').attr('src', 'nada.html')", 1500)
+				$('#prel').stop().fadeIn(0)
+				$('#prel').delay(1000).fadeOut(0)
 						
 				$(document).ready(DocReady_latitud);
 				$('#wel').fadeOut()
