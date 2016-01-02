@@ -1476,15 +1476,11 @@ function clim19(){
 	  var num_climas
 	  
 	  
-	  function ir_clima(){
-		  		$('#grados, #icono, #pollo').hide()
-				setTimeout("$('#grados, #icono, #pollo').show()", 1500)
+ function ir_clima(){
+	  
+    if(clim==0){
+	if(arrastrado == "abajo"){	
 				
-				$('#prel').show()
-						setTimeout("$('#prel').hide()", 1500)
-		  
-		  		if(clim==0){
-					
 function onSuccess(position) {
 	$('#no_local').hide()
 	var cordenadas = position.coords.latitude+", "+position.coords.longitude				
@@ -1497,6 +1493,11 @@ function onSuccess(position) {
 		lat = position.coords.latitude
 		lon = position.coords.longitude
 		$(document).ready(DocReady_latitud);
+	$('#grados, #icono, #pollo').hide()
+	setTimeout("$('#grados, #icono, #pollo').show()", 1500)
+				
+	$('#prel').show()
+	setTimeout("$('#prel').hide()", 1500)
 }
 
 function onError(error) {				
@@ -1506,7 +1507,15 @@ function onError(error) {
 }  
 		  
 var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { enableHighAccuracy: true});
-
+$('#prel').show()
+$('#grados, #icono, #pollo').hide()
+	}else{
+	$('#grados, #icono, #pollo').hide()
+	setTimeout("$('#grados, #icono, #pollo').show()", 1500)
+				
+	$('#prel').show()
+	setTimeout("$('#prel').hide()", 1500)
+	}
 					
 					
 					
@@ -1516,6 +1525,7 @@ var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { enableHi
 					$('#boll3').attr('src', 'imagenes/bolita.png');
 					$('#boll4').attr('src', 'imagenes/bolita.png');
 					$('#boll5').attr('src', 'imagenes/bolita.png');
+	
 				}else if(clim==1){
 	  				countr = localStorage.getItem('bola1')
 					$(document).ready(DocReady_ciudad);
@@ -1525,6 +1535,11 @@ var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { enableHi
 					$('#boll3').attr('src', 'imagenes/bolita.png');
 					$('#boll4').attr('src', 'imagenes/bolita.png');
 					$('#boll5').attr('src', 'imagenes/bolita.png');
+	$('#grados, #icono, #pollo').hide()
+	setTimeout("$('#grados, #icono, #pollo').show()", 1500)
+				
+	$('#prel').show()
+	setTimeout("$('#prel').hide()", 1500)
 				}else if(clim==2){
 	  				countr = localStorage.getItem('bola2')
 					$(document).ready(DocReady_ciudad);
@@ -1534,6 +1549,11 @@ var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { enableHi
 					$('#boll3').attr('src', 'imagenes/bolita.png');
 					$('#boll4').attr('src', 'imagenes/bolita.png');
 					$('#boll5').attr('src', 'imagenes/bolita.png');
+	$('#grados, #icono, #pollo').hide()
+	setTimeout("$('#grados, #icono, #pollo').show()", 1500)
+				
+	$('#prel').show()
+	setTimeout("$('#prel').hide()", 1500)
 				}else if(clim==3){
 	  				countr = localStorage.getItem('bola3')
 					$(document).ready(DocReady_ciudad);
@@ -1543,6 +1563,11 @@ var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { enableHi
 					$('#boll3').attr('src', 'imagenes/bolita2.png');
 					$('#boll4').attr('src', 'imagenes/bolita.png');
 					$('#boll5').attr('src', 'imagenes/bolita.png');
+	$('#grados, #icono, #pollo').hide()
+	setTimeout("$('#grados, #icono, #pollo').show()", 1500)
+				
+	$('#prel').show()
+	setTimeout("$('#prel').hide()", 1500)
 				}else if(clim==4){
 	  				countr = localStorage.getItem('bola4')
 					$(document).ready(DocReady_ciudad);
@@ -1552,6 +1577,11 @@ var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { enableHi
 					$('#boll3').attr('src', 'imagenes/bolita.png');
 					$('#boll4').attr('src', 'imagenes/bolita2.png');
 					$('#boll5').attr('src', 'imagenes/bolita.png');
+	$('#grados, #icono, #pollo').hide()
+	setTimeout("$('#grados, #icono, #pollo').show()", 1500)
+				
+	$('#prel').show()
+	setTimeout("$('#prel').hide()", 1500)
 				}else if(clim==5){
 	  				countr = localStorage.getItem('bola5')
 					$(document).ready(DocReady_ciudad);
@@ -1561,6 +1591,11 @@ var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { enableHi
 					$('#boll3').attr('src', 'imagenes/bolita.png');
 					$('#boll4').attr('src', 'imagenes/bolita.png');
 					$('#boll5').attr('src', 'imagenes/bolita2.png');
+	$('#grados, #icono, #pollo').hide()
+	setTimeout("$('#grados, #icono, #pollo').show()", 1500)
+				
+	$('#prel').show()
+	setTimeout("$('#prel').hide()", 1500)
 				}
 	  }
 	  
@@ -2394,8 +2429,8 @@ var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { enableHi
 				$('#tuto').attr('src', 'nada.html');
 				$('#grados, #icono, #pollo').hide()
 				setTimeout("$('#grados, #icono, #pollo').show()", 1500)
-				$('#prel').stop().fadeIn(0)
-				$('#prel').delay(1000).fadeOut(0)
+				$('#prel').show()
+				setTimeout("$('#prel').hide()", 1500)
 						
 				$(document).ready(DocReady_latitud);
 				$('#wel').fadeOut()
