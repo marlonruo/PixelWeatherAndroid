@@ -60,8 +60,10 @@ function onSuccess(position) {
 
 // onError Callback receives a PositionError object
 //
-function onError(error) {
+function onError(error) {				
     $('#no_local').show()
+	countr = 'mexico'
+	DocReady_ciudad()
 }
 
 // Options: throw an error if no update is received every 30 seconds.

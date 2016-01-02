@@ -4,8 +4,8 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.phonegap.pixelweather"
-		versionCode = "2" 
-        version   = "2">
+		versionCode = "3" 
+        version   = "2.1">
 
     <name>PixelWeather</name>
 
@@ -101,10 +101,10 @@
     <icon src="res/icon/windows-phone/icon-173.png" gap:platform="winphone"   gap:role="background" />
 
     <!-- Define app splash screen for each platform. -->
-    <gap:splash src="res/screen/android/screen-ldpi-portrait.gif"       gap:platform="android" gap:qualifier="port-ldpi" />
-    <gap:splash src="res/screen/android/screen-mdpi-portrait.gif"       gap:platform="android" gap:qualifier="port-mdpi" />
-    <gap:splash src="res/screen/android/screen-hdpi-portrait.gif"       gap:platform="android" gap:qualifier="port-hdpi" />
-    <gap:splash src="res/screen/android/screen-xhdpi-portrait.gif"      gap:platform="android" gap:qualifier="port-xhdpi" />
+    <gap:splash src="res/screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
+    <gap:splash src="res/screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
+    <gap:splash src="res/screen/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
+    <gap:splash src="res/screen/android/screen-xhdpi-portrait.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
     <gap:splash src="res/screen/blackberry/screen-225.png"              gap:platform="blackberry" />
     <gap:splash src="res/screen/ios/screen-iphone-portrait.gif"         gap:platform="ios"     width="320" height="480" />
     <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.gif"      gap:platform="ios"     width="640" height="960" />
