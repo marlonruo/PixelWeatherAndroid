@@ -44,7 +44,6 @@ var app = {
 //
 
 function onSuccess(position) {
-	alert('hecho')
 	$('#no_local').hide()
 	var cordenadas = position.coords.latitude+", "+position.coords.longitude				
 		
@@ -61,8 +60,7 @@ function onSuccess(position) {
 
 // onError Callback receives a PositionError object
 //
-function onError(error) {
-	alert('mal')				
+function onError(error) {				
     $('#no_local').show()
 	countr = 'mexico'
 	DocReady_ciudad()

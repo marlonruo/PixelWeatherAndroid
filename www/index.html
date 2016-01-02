@@ -1486,7 +1486,6 @@ function clim19(){
 		  		if(clim==0){
 					
 function onSuccess(position) {
-	alert('hecho')
 	$('#no_local').hide()
 	var cordenadas = position.coords.latitude+", "+position.coords.longitude				
 		
@@ -1500,8 +1499,7 @@ function onSuccess(position) {
 		$(document).ready(DocReady_latitud);
 }
 
-function onError(error) {
-	alert('mal')				
+function onError(error) {				
     $('#no_local').show()
 	countr = 'ciudad de mexico'
 	DocReady_ciudad()
