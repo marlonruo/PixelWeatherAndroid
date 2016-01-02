@@ -1738,11 +1738,7 @@ var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { enableHi
             <img id="alerta" src="imagenes/alerta.png" width="80%" style="position:absolute; top:50%; left:50%; transform: translate(-50%, -50%); display:none; z-index:2"/>
          
        </div>  
-       
-       
 
-       
-       
        				<script>
                     	$('#prel').transit({scale: '.4'}, 0);
                     </script> 
@@ -1890,10 +1886,10 @@ var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { enableHi
 						$('#contenedor').fadeIn()
 						$('#intro').hide()
 						$('#clima').show()			
-						$('#grados, #icono, #pollo').stop().fadeOut(0)
-						$('#grados, #icono, #pollo').delay(1500).fadeIn(800)
+						$('#grados, #icono, #pollo').hide()
+						setTimeout("$('#grados, #icono, #pollo').show()",2000)
 						$('#prel').show()
-						setTimeout("$('#prel').hide()", 1500)
+						setTimeout("$('#prel').hide()", 2000)
 						setTimeout('$(document).ready(DocReady_latitud)', 1500);
 						ver()
 						infi()
