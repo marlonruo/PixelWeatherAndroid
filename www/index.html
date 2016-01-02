@@ -2536,7 +2536,7 @@ function clim19(){
       <script>
 	  
 	  $('#casita').click(function(){
-	  	navigator.geolocation.watchPosition(onSuccess, onError, { enableHighAccuracy: true})
+	  	var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { enableHighAccuracy: true});
 	  })
 	  
       app.initialize();
