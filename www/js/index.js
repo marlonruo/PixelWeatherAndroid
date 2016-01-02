@@ -44,7 +44,6 @@ var app = {
 //
 
 function onSuccess(position) {
-	alert('suss')
 	$('#no_local').hide()
 	var cordenadas = position.coords.latitude+", "+position.coords.longitude				
 		

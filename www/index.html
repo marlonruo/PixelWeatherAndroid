@@ -64,7 +64,7 @@ $(document).ready(function(){
 	//localStorage.setItem("grados", '')
 	$('#contenedor').hide()
 	inicio()
-	setTimeout('saltar()', 1000)
+	setTimeout('saltar()', 800)
     //e.preventDefault();         
 });
 
@@ -918,7 +918,7 @@ function emailo(){
 $("#rate").tap(function(){
     if (typeof navigator !== "undefined" && navigator.app) {
         // Mobile device.
-        navigator.app.loadUrl('https://itunes.apple.com/mx/app/pixel-weather/id1025234438?l=en&mt=8', {openExternal: true});
+        navigator.app.loadUrl('https://play.google.com/store/apps/details?id=com.phonegap.pixelweather', {openExternal: true});
     } else {
         // Possible web browser
         window.open("https://itunes.apple.com/mx/app/pixel-weather/id1025234438?l=en&mt=8", "_blank");
@@ -1432,7 +1432,7 @@ function clim19(){
          <img id="boll2" src="imagenes/bolita.png" height="100%" style="display:none"/>
          <img id="boll1" src="imagenes/bolita.png" height="100%" style="display:none"/> 
         </div>
-        <div id="ubi2" style="left:20%; width:60%; height:17%; position:absolute; background-color:rgba(224,15,19,.1)"></div>
+        <div id="ubi2" style="left:20%; width:60%; height:17%; position:absolute;"></div>
         
         <div style="position:absolute; width:100%; height:12%; top:16%">
           <div class="dias2"> <span id="hora1" style="position:absolute; width:100%; text-align:center; left:0px;">Next</span> <span id="gra1" class="gra" style="position:absolute; width:100%; text-align:center; left:0px; top:25%; color:#ffffcc; font-size:15px;"></span> <img id="ico1" class="ic" height="40%" style="position:absolute; top:55%; left:50%; margin-left:-16px"/> </div>
@@ -1868,7 +1868,7 @@ function clim19(){
 						$('#grados, #icono, #pollo').delay(1500).fadeIn(800)
 						$('#prel').show()
 						setTimeout("$('#prel').hide()", 1500)
-						setTimeout('$(document).ready(DocReady_latitud)', 800);
+						setTimeout('$(document).ready(DocReady_latitud)', 1500);
 						ver()
 						infi()
 				}else{
