@@ -63,7 +63,7 @@ $(document).ready(function(){
 	//localStorage.setItem("grados", '')
 	$('#contenedor').hide()
 	inicio()
-	setTimeout('saltar()', 100)
+	setTimeout('saltar()', 1000)
     //e.preventDefault();         
 });
 
@@ -917,7 +917,7 @@ function emailo(){
 $("#rate").tap(function(){
     if (typeof navigator !== "undefined" && navigator.app) {
         // Mobile device.
-        navigator.app.loadUrl('https://play.google.com/store/apps/details?id=com.phonegap.pixelweather', {openExternal: true});
+        navigator.app.loadUrl('https://itunes.apple.com/mx/app/pixel-weather/id1025234438?l=en&mt=8', {openExternal: true});
     } else {
         // Possible web browser
         window.open("https://itunes.apple.com/mx/app/pixel-weather/id1025234438?l=en&mt=8", "_blank");
@@ -1444,8 +1444,7 @@ function clim19(){
 
         <iframe id="pollo" width="750" height="550" style="position:absolute; left:50%; border:none; bottom:10%; margin-left:-380px; overflow:hidden; margin-bottom:-153px;" scrolling="no"></iframe>
         
-        <img id="prel" src="imagenes/preload.gif" style="position:absolute; width:50%; left:25%; top:40%; display:none"/>
-       
+        <iframe src="preload/preload.html" id="prel" width="750" height="550" style="position:absolute; left:50%; border:none; bottom:10%; margin-left:-380px; overflow:hidden; display:none; top:55%; margin-top:-250px;" scrolling="no"></iframe> 
         
         <div style="width:100%; height:80%; position:absolute; top:20%"></div>
         <img id="menu" src="imagenes/menu.png" style="position:absolute; top:6%; left:5%; height:3%; cursor:pointer"/> <img id="mundo" src="imagenes/mundo.png" style="position:absolute; top:5.5%; right:5%; height:4%; cursor:pointer;"/>
@@ -1481,7 +1480,7 @@ function clim19(){
 				setTimeout("$('#grados, #icono, #pollo').show()", 1500)
 				
 				$('#prel').show()
-				$('#prel').delay(1500).fadeOut(0)
+						setTimeout("$('#prel').hide()", 1500)
 		  
 		  		if(clim==0){
 					$(document).ready(DocReady_latitud);
@@ -1717,7 +1716,10 @@ function clim19(){
        
 
        
-      
+       
+       				<script>
+                    	$('#prel').transit({scale: '.4'}, 0);
+                    </script> 
             
 
       <script src="js/data.js"></script>           
@@ -1807,7 +1809,7 @@ function clim19(){
 				setTimeout("$('#grados, #icono, #pollo').show()", 1500)
 				
 				$('#prel').show()
-				$('#prel').delay(1500).fadeOut(0)
+						setTimeout("$('#prel').hide()", 1500)
 				
 					event.preventDefault();
 					$(this).val(ui.item.label);
@@ -1837,7 +1839,7 @@ function clim19(){
 				setTimeout("$('#grados, #icono, #pollo').show()", 1500)
 				
 				$('#prel').show()
-				$('#prel').delay(1500).fadeOut(0)
+				setTimeout("$('#prel').hide()", 1500)
 				
 					countr = document.getElementById('countries2').value
 					$("#countries2").blur()
@@ -1863,8 +1865,8 @@ function clim19(){
 						$('#clima').show()			
 						$('#grados, #icono, #pollo').stop().fadeOut(0)
 						$('#grados, #icono, #pollo').delay(1500).fadeIn(800)
-						$('#prel').stop().fadeIn(0)
-						$('#prel').delay(1500).fadeOut(0)
+						$('#prel').show()
+						setTimeout("$('#prel').hide()", 1500)
 						setTimeout('$(document).ready(DocReady_latitud)', 800);
 						ver()
 						infi()
@@ -2129,7 +2131,7 @@ function clim19(){
 				setTimeout("$('#grados, #icono, #pollo').show()", 1500)
 				
 				$('#prel').show()
-				$('#prel').delay(1500).fadeOut(0)
+						setTimeout("$('#prel').hide()", 1500)
 				
 				
 				
@@ -2159,7 +2161,7 @@ function clim19(){
 				setTimeout("$('#grados, #icono, #pollo').show()", 1500)
 				
 				$('#prel').show()
-				$('#prel').delay(1500).fadeOut(0)
+						setTimeout("$('#prel').hide()", 1500)
 				
 				$('#uu1').attr('src', 'imagenes/ubi.png');
 				$('#boll1').attr('src', 'imagenes/bolita.png');
@@ -2184,7 +2186,7 @@ function clim19(){
 				setTimeout("$('#grados, #icono, #pollo').show()", 1500)
 				
 				$('#prel').show()
-				$('#prel').delay(1500).fadeOut(0)
+						setTimeout("$('#prel').hide()", 1500)
 				
 				$('#uu1').attr('src', 'imagenes/ubi.png');
 				$('#boll1').attr('src', 'imagenes/bolita.png');
@@ -2211,7 +2213,7 @@ function clim19(){
 				setTimeout("$('#grados, #icono, #pollo').show()", 1500)
 				
 				$('#prel').show()
-				$('#prel').delay(1500).fadeOut(0)
+						setTimeout("$('#prel').hide()", 1500)
 				
 				$('#uu1').attr('src', 'imagenes/ubi.png');
 				$('#boll1').attr('src', 'imagenes/bolita.png');
@@ -2237,7 +2239,7 @@ function clim19(){
 				setTimeout("$('#grados, #icono, #pollo').show()", 1500)
 				
 				$('#prel').show()
-				$('#prel').delay(1500).fadeOut(0)
+						setTimeout("$('#prel').hide()", 1500)
 				
 				$('#uu1').attr('src', 'imagenes/ubi.png');
 				$('#boll1').attr('src', 'imagenes/bolita.png');
@@ -2369,7 +2371,7 @@ function clim19(){
 				$('#grados, #icono, #pollo').hide()
 				setTimeout("$('#grados, #icono, #pollo').show()", 1500)
 				$('#prel').stop().fadeIn(0)
-				$('#prel').delay(1500).fadeOut(0)
+				$('#prel').delay(1000).fadeOut(0)
 						
 				$(document).ready(DocReady_latitud);
 				$('#wel').fadeOut()
@@ -2410,30 +2412,31 @@ function clim19(){
 			$('#menu, #menu1').tap(function(){
 				if(lugar==1){
 				$('#menu1').css('height','100%')
-				$('#clima').animate({left:'90%'}, 500);
-				$('#menu').animate({left:'2%'}, 500);
+				$('#clima').animate({left:'90%'}, 800);
+				$('#menu').animate({left:'2%'}, 800);
 				$('#opciones').show()
 				lugar=2
 				}else{
 				$('#menu1').css('height','11%')
-				$('#clima').animate({left:'0%'}, 500);
-				$('#menu').animate({left:'5%'}, 500);
-				$('#opciones').delay(500).fadeOut(0)
+				$('#clima').animate({left:'0%'}, 800);
+				$('#menu').animate({left:'5%'}, 800);
+				$('#opciones').delay(800).fadeOut(0)
 				lugar=1
 				}
 			})
 			$('#mundo, #mundo1').tap(function(){
 				if(lugar==1){
 					$('#mundo1').css('height','100%')
-					$('#clima').animate({left:'-90%'}, 500);
-					$('#mundo').animate({right:'2%'}, 500);
+					$('#clima').animate({left:'-90%'}, 800);
+					$('#mundo').animate({right:'2%'}, 800);
 					$('#mapa').css('visibility', 'visible')
-					lugar=3	
+					lugar=3
+					
 				}else{
 					$('#mundo1').css('height','11%')
-					$('#clima').animate({left:'0%'}, 500);
-					$('#mundo').animate({right:'5%'}, 500);
-					setTimeout("$('#mapa').css('visibility', 'hidden')", 500);
+					$('#clima').animate({left:'0%'}, 800);
+					$('#mundo').animate({right:'5%'}, 800);
+					setTimeout("$('#mapa').css('visibility', 'hidden')", 800);
 					lugar=1
 				}
 			})
