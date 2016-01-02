@@ -1484,7 +1484,34 @@ function clim19(){
 						setTimeout("$('#prel').hide()", 1500)
 		  
 		  		if(clim==0){
-					$(document).ready(DocReady_latitud);
+					
+function onSuccess(position) {
+	alert('hecho')
+	$('#no_local').hide()
+	var cordenadas = position.coords.latitude+", "+position.coords.longitude				
+		
+		navigator.geolocation.clearWatch(watchID);
+		
+		localStorage.setItem("latitud", position.coords.latitude);
+		localStorage.setItem("longitude", position.coords.longitude);
+		
+		lat = position.coords.latitude
+		lon = position.coords.longitude
+		$(document).ready(DocReady_latitud);
+}
+
+function onError(error) {
+	alert('mal')				
+    $('#no_local').show()
+	countr = 'ciudad de mexico'
+	DocReady_ciudad()
+}  
+		  
+var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { enableHighAccuracy: true});
+
+					
+					
+					
 					$('#uu1').attr('src', 'imagenes/ubi2.png');
 					$('#boll1').attr('src', 'imagenes/bolita.png');
 					$('#boll2').attr('src', 'imagenes/bolita.png');
@@ -2534,11 +2561,7 @@ function clim19(){
       <script type="text/javascript" src="js/app.js"></script> 
       <script type="text/javascript" src="js/index.js"></script> 
       <script>
-	  
-	  $('#casita').click(function(){
-	  	var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { enableHighAccuracy: true});
-	  })
-	  
+  
       app.initialize();
       </script> 
       
