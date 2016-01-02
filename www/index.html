@@ -1510,6 +1510,7 @@ var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { enableHi
 $('#prel').show()
 $('#grados, #icono, #pollo').hide()
 	}else{
+		$(document).ready(DocReady_latitud);
 	$('#grados, #icono, #pollo').hide()
 	setTimeout("$('#grados, #icono, #pollo').show()", 1500)
 				
